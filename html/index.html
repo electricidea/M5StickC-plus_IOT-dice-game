@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Dice</title>
+    <style>
+      body {
+        background: #FFFFFF;
+        margin: 0;
+      }
+      #HeadFont {
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #FFFFFF;
+        font-weight: normal;
+      }
+      #DiceFont {
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 70px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #FFFFFF;
+        font-weight: 400;
+      }
+    </style>
+    
+    <script>
+      window.onload = function(){   
+          document.getElementById('dice1').innerHTML = dice1value;
+          document.getElementById('dice2').innerHTML = dice2value;
+        };
+      </script>
+    <script type="text/javascript" src="dicevalue.js"></script>
+  </head>
+  <body>
+    <table style="background-color: #7f7f7f; border-color: #000000; margin-left: auto; margin-right: auto; cellspacing=10">
+    <tbody>
+        <tr>
+            <td id="HeadFont" style="text-align: center;">
+            
+            <table style="float: center;" cellspacing="10">
+            <tbody id="HeadFont">
+            <tr>
+              <td style="text-align: center;">M5StickC-plus digital dice</td>
+              <td><img alt="" src="electric-idea_50x50.jpg"/></td>
+            </tr>
+            </tbody>
+            </table>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+            <table  align="center"  border="1" style="float: center;" cellspacing="10">
+            <tbody id="DiceFont">
+            <tr>
+                <td width=120 id="dice1" style="text-align: center; letter-spacing: 0px;"></td>
+                <td width=120  id="dice2" style="text-align: center; letter-spacing: 0px;"></td>
+            </tr>
+            </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr><td style="text-align: right;"><a href="/"><img alt="" src="refresh-40x30.png"/></a></td></tr>
+    </tbody>
+    </table>
+  </body>
+</html>
